@@ -1,7 +1,131 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+/*Página inicial*/
+
+.banner{
+  width: 100%;
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;/* 2 vezes o tamanho base isso quer dizer 30px*/
+  margin: 0 0 1em;
+  clear:left;
+}
+
+.titulo-principal::first-letter{
+  font-weight: bold;
+}
+
+.titulo-principal:before{
+  content: "[   "
+}
+/*depois do elemento*/
+.titulo-principal:after{
+  content: "   ]";
+}
+
+.principal{
+  padding:  3em 0;
+  width: 940px;
+  margin: 0 auto;  
+  background:  #fefefe;
+}
+
+.principal p{
+  margin: 0 0 1em;
+  background: #fefefe;
+}
+
+.principal strong{
+  font-weight: bold;
+}
+
+.principal em{
+  font-style: italic;
+}
+
+.beneficios{
+  background: #DEE0DD;
+  padding: 3em 0;  
+}
+
+.conteudo-beneficios{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.imagem-beneficios{
+  width: 60%;
+  opacity: 1;
+  transition: 400ms ;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover{
+  opacity: 0.3;
+}
+
+.utensilios{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.itens{
+  line-height: 1.5;
+}
+
+/*Marca o primeiro item da lista em negrito
+.itens:first-child{
+  font-weight: bold;
+}*/
+
+/*Escolhe qual o item que quer marcar 
+  .itens:nth-child(4){
+    font-weight: bold;
+  }
+*/
+
+/*Marca todos os elementos pares*/
+.itens:nth-child(2n){
+  font-weight: bold;
+}
+
+.mapa{
+  padding:  3em 0;
+  background-image: linear-gradient(#FEFEFE, #DEE0DD);
+}
+
+.mapa-conteudo{
+  width: 940px;
+  margin: 0 auto;
+ 
+}
+
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.video{
+  width: 560px;
+  margin: 2em auto;
+}
+
 header{
   background: #bbbbbb;
   padding: 20px 0;
 }
+
+
 
 .caixa{
   position: relative;
@@ -96,9 +220,7 @@ footer{
 }
 
 main{
-  width: 940px;
-  margin: 0 auto;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 form{
@@ -183,3 +305,50 @@ td, th{
   text-align: center; 
 }
 
+@media screen and (max-width: 480px){
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+  }
+
+  .lista-beneficios, .imagem-beneficios{
+    width: 100%;
+  }
+}
+
+/*
+****** comportamento ******
+:hover 
+
+:active
+
+:visited
+
+:required
+*?
+
+
+/*
+  // só vai ser aplicada o estilo nos parágrafos filhos de primeiro grau
+  img > p{
+  }
+
+  // primeiro irmão que vem depois de um elemento
+  img + p {
+
+  }
+  //Para selecionar todos os parágrafos localizados depois de uma imagem
+  img ~ p {
+  }
+
+  //todos os paragrafos que o id não é "missao"
+  .principal p:not(#missao){
+  }
+*/
