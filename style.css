@@ -1,0 +1,185 @@
+header{
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caixa{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav{
+  position: absolute;
+  top: 110px;
+  right: 0;
+
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;  
+  margin: 0 1.5%;
+  padding:  30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.produtos li:hover {
+  border-color: #c78c19;
+  
+}
+
+.produtos li:active {
+  border-color: #05a71b;
+}
+
+.produtos li:hover h2{
+  font-size: 34px;
+}
+
+.produtos h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.preco-produto{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.produto-descricao{
+  font-size: 18px;
+
+}
+
+footer{
+  text-align: center;
+  background: url("bg.jpg");
+  padding: 40px 0px;
+  
+}
+
+.copyright{
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0 ;
+  /*unicode*/
+}
+
+main{
+  width: 940px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+ margin: 40px 0;
+ 
+}
+
+form label, form legend{ 
+  display: block; 
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+fieldset p{
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.horario{   
+  width: 40%;   
+  padding: 10px;
+  font: normal 20px Verdana, Geneva, sans-serif;
+  border-color: #cccccc;
+  border-radius: 10px;
+
+}
+
+.input-padrao{
+  display: block;
+  margin:  0 0 20px;
+  padding:  10px 25px;
+  font-size: 20px;
+  width: 50%;
+  border-radius: 10px;
+  border-color: #cccccc;
+}
+
+.checkbox{
+  margin: 20px 0;
+}
+
+.enviar{
+  width: 40%;
+  padding: 15px 0;
+  background: darkorange;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  transition: 1s all;
+}
+
+.enviar:hover{
+  background: #c78c19;
+  transform: scale(1.2); /*expande*/
+  /*transform: rotate(5deg); /*rotação */
+}
+
+table{
+  margin: 20px 0 40px;
+  width: 60%;
+}
+
+thead{
+  background: #cccccc;
+  font-weight: bold;
+  
+}
+
+tr{
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  
+}
+
+td, th{
+  
+  padding: 8px 15px ;
+  font-size: 20px;  
+  text-align: center; 
+}
+
